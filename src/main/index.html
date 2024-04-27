@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* Стили для вкладок */
+        .tab {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab('tab1')">Вкладка 1</button>
+        <button class="tab-button" onclick="openTab('tab2')">Вкладка 2</button>
+        <!-- Добавьте другие вкладки по аналогии -->
+    </div>
+
+    <div id="tab1" class="tab">
+        <h1>Содержимое вкладки 1</h1>
+        <p>Это первая вкладка.</p>
+    </div>
+
+    <div id="tab2" class="tab">
+        <h1>Содержимое вкладки 2</h1>
+        <p>Это вторая вкладка.</p>
+    </div>
+    <!-- Добавьте другие вкладки по аналогии -->
+
+    <script>
+        function openTab(tabName) {
+            const tabs = document.getElementsByClassName('tab');
+            for (const tab of tabs) {
+                tab.style.display = 'none';
+            }
+            document.getElementById(tabName).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
