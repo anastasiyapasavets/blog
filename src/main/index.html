@@ -2,41 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        /* Стили для вкладок */
-        .tab {
-            display: none;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="tabs">
-        <button class="tab-button" onclick="openTab('tab1')">Вкладка 1</button>
-        <button class="tab-button" onclick="openTab('tab2')">Вкладка 2</button>
-        <!-- Добавьте другие вкладки по аналогии -->
-    </div>
-
-    <div id="tab1" class="tab">
-        <h1>Содержимое вкладки 1</h1>
-        <p>Это первая вкладка.</p>
-    </div>
-
-    <div id="tab2" class="tab">
-        <h1>Содержимое вкладки 2</h1>
-        <p>Это вторая вкладка.</p>
-    </div>
-    <!-- Добавьте другие вкладки по аналогии -->
-
-    <script>
-        function openTab(tabName) {
-            const tabs = document.getElementsByClassName('tab');
-            for (const tab of tabs) {
-                tab.style.display = 'none';
-            }
-            document.getElementById(tabName).style.display = 'block';
-        }
-    </script>
-
+<header>
+    <h1>Welcome</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Welcome</h2>
+        <p>Some greeting</p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Snowflake</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
